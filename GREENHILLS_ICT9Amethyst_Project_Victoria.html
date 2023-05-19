@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <title>Millimeter Converter</title>
+  <style>
+     header {
+      background-color: #ADD8E6;
+      padding: 20px;
+      text-align: center;
+    }
+    </style>
+<body>
+    <header>
+    <h1>︵‿︵‿୨♡୧‿︵‿︵</h1>
+  </header>
+
+<center><h2>Millimeter Converter</h2></center>
+<center><label>Millimeter:</label>
+  <input id="inputMinutes" type="number" placeholder="Number" oninput="TimeConverter(this.value)" onchange="TimeConverter(this.value)"></center>   
+<center><p>Centimeters:<span id="outputCentimeters"></span></p></center>
+<center><p>Meters:<span id="outputMeters"></span></p></center>
+<center><p>Kilometers:<span id="outputKilometers"></span></p></center>
+
+<script>
+function TimeConverter(valNum) {
+  document.getElementById("outputCentimeters").innerHTML=valNum/10;
+  document.getElementById("outputMeters").innerHTML=valNum/1000;
+  document.getElementById("outputKilometers").innerHTML=valNum/1000000;
+}
+</script>
+</body>
+</html>
